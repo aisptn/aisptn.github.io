@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,7 @@
 <style>
     :root {
         color-scheme: dark light;
-        
+        --main-color: hwb(251 15% 70%);
     }
 
     * {
@@ -24,30 +25,39 @@
         height: 100vh;
     }
 
-    .typing {
-        animation: typing 3s steps(15), blink .5s step-end infinite alternate;
-        border-right: 2px solid;
-        font-family: monospace;
-        overflow: hidden;
-        white-space: nowrap;
-        width: 15ch;
+    .card {
+        background: var(--main-color);
+        border-radius: 1rem;
+        display: grid;
+        gap: 2rem;
+        padding: 1rem 2rem;
     }
 
-    @keyframes typing {
-        from {
-            width: 0
-        }
+    li {
+        background: var(--main-color);
+        border: 1px solid;
+        border-radius: 0.5rem;
+        list-style: none;
+        padding: 0.5rem;
+        text-align: center;
     }
 
-    @keyframes blink {
-        50% {
-            border-color: transparent
-        }
+    li:hover {
+        filter: invert();
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
     }
 </style>
 
 <body>
-    <h1 class="typing">coming soon... </h1>
+    <div class="card">
+        <h1>my projects</h1>
+        <ul>
+            <li><a href="https://aisptn.github.io/polaroid">🖼️ polaroid</a></li>
+    </div>
 </body>
 
 </html>
