@@ -30,19 +30,24 @@
         border-radius: 1rem;
         display: grid;
         gap: 2rem;
-        padding: 1rem 2rem;
+        padding: 2rem;
     }
 
     li {
+        list-style: none;
+    }
+
+    li a {
         background: var(--main-color);
         border: 1px solid;
         border-radius: 0.5rem;
-        list-style: none;
+        display: block;
         padding: 0.5rem;
         text-align: center;
+        width: 100%;
     }
 
-    li:hover {
+    li a:hover {
         filter: invert();
     }
 
