@@ -14,6 +14,9 @@
             height: 100vh;
             justify-content: center;
         }
+        body h1 {
+            text-align: center;
+        }
         section {
             align-items: center;
             display: flex;
@@ -21,8 +24,8 @@
             gap: 1rem;
         }
         article ul {
-            display: inline-flex;
-            flex-direction: column;
+            margin: 0;
+            padding: 0;
         }
         article ul li {
             list-style: none;
@@ -34,24 +37,31 @@
             width: 100%;
         }
         article ul li a {
-            margin: 0 1rem;
+            color: white;
             text-decoration: none;
+        }
+        article h2 {
+            margin: 1rem 0 0.5rem;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <main>
         <section>
-            <h1>projects by aisptn</h1>
+            <h1>projects by aisptn</h1> 
             <article>
                 <ul>
-                    <li><a href="/polaroid"><button>🖼️ polaroid maker</button></a></li>
-                    <li><a href="/yt-audio-normaliser"><button>🔊 yt audio normaliser</button></a></li>
-                    <li><a href="/alarm"><button>⏰ alarm clock</button></a></li>
-                    <li><a href="/image-converter"><button>🖼️ image converter</button></a></li>
+                    <li><a href="/polaroid" type="button">🖼️ polaroid maker</a></li>
+                    <li><a href="/yt-audio-normaliser" type="button">🔊 yt audio normaliser</a></li>
+                    <li><a href="/alarm" type="button">⏰ alarm clock <br>(broken for now)</a></li>
+                    <li><a href="/image-converter" type="button">🖼️ image converter</a></li>
+                </ul>
+                <h2>new!!</h2>
+                <ul>
+                    <li><a href="/pasfoto" type="button">📸 pasfoto</a></li>
                 </ul>
             </article>
-
         </section>
     </main>
 </body>
